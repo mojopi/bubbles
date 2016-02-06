@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    .bubble {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: blue;
+        position: relative;
+    }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <script>
+
+
+
+    // var bubble = document.getElementsByClassName('bubble')
+    
+        /*circle.style.top = '200px'
+        circle.style.left = '100px'*/
+
+var bubbles = document.getElementsByClassName('bubble')
+for (var i = 0; i < bubbles.length;) { bubbles[i].style.left = Math.floor(Math.random()*100) + '%'; }
+
+    var position = function() {
+        bubble[0].style.top = "calc(" + Math.floor(100 * Math.random()) + '%' + ' - 200px)';
+        bubble[0].style.left = "calc(" + Math.floor(100 * Math.random()) + '%' + ' - 200px)';
+    }
+
+    // position()
+
+    /*var color = function() {
+        var colorString = "rgb(" + Math.floor(255 * Math.random()) + ',' + Math.floor(255 * Math.random()) + ',' + Math.floor(255 * Math.random()) + ")";
+        console.log("The color is", colorString);
+        bubble.style.backgroundColor = colorString;
+    }
+
+    color()*/
+
+    /*var size = funciton () {
+    	bubble.style.width = 1000*Math.random()
+    	bubble.style.height = 1000*Math.random()
+    }
+
+    size ()*/
+
+    // setInterval(position, 500);
+    // setInterval(color, 500)
+        //setInterval(size, 500)//
+
+    // for (var i = 0; i < 10; i = i + 1) {
+    // 	console.log(i);
+    // }
+
+    var i = 0;
+    while (i < 10) {
+        console.log(i);
+        i = i + 1;
+    }
+
+    var i = 0;
+    do {
+        console.log(i);
+        i = i + 1;
+    } while (i < 10);
+    </script>
+</body>
+
+</html>
